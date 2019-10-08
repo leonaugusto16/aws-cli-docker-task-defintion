@@ -1,0 +1,9 @@
+version: '2'
+services:
+  aws-sdk:
+    image: leonaugusto16/aws-sdk:latest
+    mem_reservation: 128m
+    mem_limit: 1g
+    container_name: aws-sdk
+
+#ecs-cli compose  -f docker-compose.yml --project-name aws-sdk-test --region <REGION> create
